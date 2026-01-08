@@ -1,0 +1,29 @@
+/* ======================= about.css ======================= */
+* { margin:0; padding:0; box-sizing:border-box; font-family:Arial; }
+body { background:#ffffff; color:#333; }
+
+
+
+
+
+.about {
+padding:80px 40px; text-align:center;
+}
+.profile {
+width:200px; height:200px; border-radius:50%; object-fit:cover;
+margin-bottom:20px;
+}
+
+
+.designer {
+margin-top:40px;
+display:flex; justify-content:center; align-items:center; gap:15px;
+}
+.designer img { width:70px; height:70px; border-radius:50%; }
+
+
+.whatsapp {
+position:fixed; bottom:20px; right:20px;
+background:#25D366; color:white; padding:15px 20px;
+border-radius:50px; text-decoration:none; font-weight:bold;
+}
