@@ -20,12 +20,17 @@
             width: 100px;
         }
 
-        .img {
-            width: 500px;
+        .home h2 {
+            color: white;
+            background-color: black;
         }
-        .carousel{
-         margin-top: 20px;
-         margin-bottom: 20px;
+        .phone{
+            border-radius: 100%; 
+        width: 50%;
+        align-self: auto;
+        }
+        .gap-3{
+            gap: 10px;
         }
     </style>
 </head>
@@ -68,35 +73,39 @@
             </div>
         </nav>
     </section>
+    
+    <section class="home">
 
-    <!-- carousel -->
-    <section class="carousel">
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="3000">
-                    <img src="./480354942_1843395266483141_3475043068431853055_n.jpg" class="d-block w-100" height="600"
-                        alt="...">
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <img src="./480664299_1848740315948636_6465730176883071946_n.jpg" class="d-block w-100" height="600"
-                        alt="...">
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <img src="./480695308_1848740325948635_6524195193082075926_n.jpg" class="d-block w-100" height="600"
-                        alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
+        <h2>Design offers</h2>
+        <ul>
+            <li>Logo</li>
+            <li>Banner</li>
+            <li>Flyer</li>
+            <li>Business card</li>
+            <li>Brand Identity</li>
+            <li>ID card</li>
+            <li>Social media graphics</li>
+            <li>Resume</li>
+            <li>Logo design mockup</li>
+            <li>Invitation card.....etc</li>
+        </ul>
+
+        <h2>Why work with me?</h2>
+        <ul>
+            <li>Fast delivery</li>
+            <li>Clear communication</li>
+            <li>Designs tailored to your brand</li>
+        </ul>
+    </section>
+
+    <section>
+        Ready to bring your ideas to life?
+        Let's create designs that speak for your brand
+
+        <button type="button" class="btn btn-primary"
+            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+            Contact us
+        </button>
     </section>
 
     <!-- accordion -->
@@ -111,9 +120,11 @@
             <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                     <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse
-                    plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                    plugin adds the appropriate classes that we use to style each element. These classes control the
+                    overall
                     appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-                    custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go
+                    custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can
+                    go
                     within the <code>.accordion-body</code>, though the transition does limit overflow.
                 </div>
             </div>
@@ -127,10 +138,13 @@
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                    <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse
-                    plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                    <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the
+                    collapse
+                    plugin adds the appropriate classes that we use to style each element. These classes control the
+                    overall
                     appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-                    custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go
+                    custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can
+                    go
                     within the <code>.accordion-body</code>, though the transition does limit overflow.
                 </div>
             </div>
@@ -144,21 +158,56 @@
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                    <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse
-                    plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                    <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the
+                    collapse
+                    plugin adds the appropriate classes that we use to style each element. These classes control the
+                    overall
                     appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-                    custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go
+                    custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can
+                    go
                     within the <code>.accordion-body</code>, though the transition does limit overflow.
                 </div>
             </div>
         </div>
     </div>
 
+    <div class="container-fluid slideanim gap-3">
+        <div class="col-sm-4">
+            <img class="phone" src="./new.jpg" alt="Phone Number Dailing" style="width: 100%;">
+        </div>
+        <div class="col-sm-8 conc">
+            <h2>We’ll be glad to hear from you. Contact us today and let’s take your business together to the next level.</h2>
+
+            <form action="contact-handler.php" method="POST">
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="user-name" name="name" placeholder="Name" type="text" required="">
+                    </div>
+                    
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="user-phone" name="phone" placeholder="Phone Number" type="text" required="">
+                    </div>
+                    
+                    <div class="col-sm-12 form-group">
+                        <input class="form-control" id="user-email" name="email" placeholder="Your Email" type="email" required="">
+                    </div>
+                </div>
+                <textarea class="form-control" id="user-message" name="message" placeholder="Your Message" rows="5" style="resize: none;" required=""></textarea><br>
+                <div class="row">
+                    <div class="col-sm-12 form-group">
+                        <button id="message-submit" type="submit" name="submit" class="btn btn-default pull-right">Send Message <span class="fa fa-paper-plane" aria-hidden="true"></span></button>
+                    </div>
+                </div>
+                <br>
+                <p class="form-message"></p>
+            </form>
+        </div>
+    </div>
 
     <!-- footer -->
-     <section>
+    <section>
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-            <p class="col-md-4 mb-0 text-body-secondary">© 2025 Company, Inc</p> <a href="/"
+            <p class="col-md-4 mb-0 text-body-secondary">© OKC DEZINE HUB 2025 Company, Inc</p> <a href="/"
                 class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
                 aria-label="Bootstrap"> <svg class="bi me-2" width="40" height="32" aria-hidden="true">
                     <use xlink:href="#bootstrap"></use>
@@ -171,8 +220,8 @@
                 <li class="nav-item"><a href="./about.html" class="nav-link px-2 text-body-secondary">About</a></li>
             </ul>
         </footer>
-     </section>
-    
+    </section>
+
 
 </body>
 
